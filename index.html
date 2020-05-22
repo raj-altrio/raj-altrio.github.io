@@ -1,7 +1,155 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+  
+  <title>Altrio</title>
+</head><body>
+
+<div id="page-container">
+<div id="page" class="page-home text-base"><div id="page-top-bar"></div>
+<div id="page-header">
+  <a href="/">
+  <img id="logo" width="100px" src="/assets/img/altrio_logo_navy.png" alt="logo" />
+  <img id="alt-logo" class="hidden" width="100px" src="/assets/img/altrio_logo_white.png" alt="logo" />
+</a><div id="menu">
+  <a href="/about"><span class="font-serif menu-item text-navy ">About</span></a>
+  <a href="/careers"><span class="font-serif menu-item text-navy ">Careers</span></a>
+  <span id="menu-request-demo" class="btn blue request-demo">Request a Demo</span>
+  <img id="open-menu" src="/assets/img/menu.svg" alt="open menu" onclick="toggleMenu(true)" />
+  <svg id="close-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="toggleMenu(false)">
+    <path d="M1 1L23 23" stroke="#0D2443" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M23 1L1 23" stroke="#0D2443" stroke-width="2" stroke-miterlimit="10"/>
+  </svg>
+</div>
+</div><div id="hero-text">
+  <div class="text-4xl font-bold leading-snug">
+    <p>Invest smarter.</p>
+    <p>Build a winning portfolio.</p>
+  </div>
+  <div class="font-serif text-xl leading-relaxed">
+    <p>We build technology to help real estate investors achieve their goals and enjoy what they do.</p>
+  </div>
+  <span class="btn clear request-demo">Learn More</span>
+</div>
+<img id="home-hero" src="/assets/img/home-hero.jpg" alt="people sitting at table" />
+<div id="introducing-origin" class="text-4xl font-bold text-center">
+  Introducing <span class="underline-bright-blue">Origin</span>, the next generation of deal management software.
+</div>
+<div id="highlights" class="background-navy text-white">
+  <span id="highlights-title" class="text-3xl font-bold">The Origin Advantage</span>
+  <div id="highlight-items">
+    <img class="highlight-1 active" src="/assets/img/highlight_1.png" alt="highlight icon" />
+    <p class="highlight-1 highlight-title active text-xl font-bold pt-4 pb-4">Unleash the power of your market knowledge</p>
+    <p class="highlight-1 highlight-sub-title active font-serif">Not everyone knows what you know. Turn your proprietary market knowledge into a true competitive edge.</p>    
+    <img class="highlight-2" src="/assets/img/highlight_2.png" alt="highlight icon" />
+    <p class="highlight-2 highlight-title text-xl font-bold pt-4 pb-4">Invest with absolute conviction</p>
+    <p class="highlight-2 highlight-sub-title font-serif">Quickly pass on the wrong deals and move forward confidently with the right ones.</p>    
+    <img class="highlight-3" src="/assets/img/highlight_3.png" alt="highlight icon" />
+    <p class="highlight-3 highlight-title text-xl font-bold pt-4 pb-4">Execute with efficiency and quality</p>
+    <p class="highlight-3 highlight-sub-title font-serif">Keep everyone on the same page, stay on top of important tasks - and skip the manual data entry.</p>    
+  </div>
+  <div id="dots">
+    <svg id="dot-1" class="dot active" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="5.5" cy="5.5" r="5.5" fill="#C4C4C4" onclick="setActiveHighlight"/>
+    </svg>
+    <svg id="dot-2" class="dot" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="5.5" cy="5.5" r="5.5" fill="#C4C4C4"/>
+    </svg>
+    <svg id="dot-3" class="dot" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="5.5" cy="5.5" r="5.5" fill="#C4C4C4"/>
+    </svg>
+  </div>
+</div>
+<div id="feature-1" class="feature">
+  <img src="/assets/img/feature_1.png" alt="feature drawing" />
+  <div class="feature-text">
+    <p class="text-3xl font-bold leading-tight pb-5">Everything you need to know in one place.</p>
+    <p class="font-serif leading-relaxed">Effortlessly extract deal information from documents and emails, rescuing your invaluable proprietary knowledge from spreadsheets or shared folders. Capture everything you need to know about assets, companies, and markets in our flexible and extensive database.</p>
+  </div>
+</div>
+<div id="feature-2" class="feature">
+  <img src="/assets/img/feature_2.png" alt="feature drawing" />
+  <div class="feature-text">
+    <p class="text-3xl font-bold leading-tight pb-5">Optimize your investment process. Work smarter, together.</p>
+    <p class="font-serif leading-relaxed">Origin’s powerful collaboration and workflow management features make it easy to keep everyone on the same page, avoid duplication of effort and never miss an important task or deadline. Capture metrics that allow you to measure and improve how you invest.</p>
+  </div>
+</div>
+<div id="feature-3" class="feature">
+  <img src="/assets/img/feature_3.png" alt="feature drawing" />
+  <div class="feature-text">
+    <p class="text-3xl font-bold leading-tight pb-5">Manage your investments through their entire lifecycle.</p>
+    <p class="font-serif leading-relaxed">Track your investments from initial screen to final disposition. Forecast the impact of purchases and sales on your portfolio construction and capital position. View your pipeline and owned assets from the perspective of funds, joint-ventures or other portfolios.</p>
+  </div>
+</div>
+<div id="feature-4" class="feature">
+  <img src="/assets/img/feature_4.png" alt="feature drawing" />
+  <div class="feature-text">
+    <p class="text-3xl font-bold leading-tight pb-5">Simple to use, but powerful enough to handle your most complex scenarios.</p>
+    <p class="font-serif leading-relaxed">Whether you’re a small team managing a local portfolio or a global institution with complex requirements, we have you covered. Origin provides ease-of-use without sacrificing robust capabilities.</p>
+  </div>
+</div><div id="we-are-hiring">
+  <img id="we-are-hiring-image" src="/assets/img/man-with-laptop.jpg" alt="man with laptop" />
+  <div id="we-are-hiring-text">
+    <p class="pb-5">We're hiring. Join our team and help us build the future of real estate investing.</p>
+    <a href="/careers#positions"><span id="view-open-positions" class="btn blue">View Open Positions</span></a>
+  </div>
+</div><div id="get-started">
+  <div id="get-started-text">
+    <p>Get started today.</p>
+    <p>Let us show you the many powerful features Origin has to offer.</p>
+  </div>
+  <span class="btn black request-demo">Request a Demo</span>
+</div>
+
+</div><!-- TEMPLATE: All Pages -->
+<footer>
+<div id="footer">
+  <img id="footer-logo" width="100px" src="/assets/img/altrio_logo_white.png" alt="logo" />
+  <span id="copyright" class="text-end text-white text-xs">&copy; 2020 Altrio Inc.</span>
+</div>
+<div id="full-screen-menu">
+  <div id="full-screen-menu-items" class="font-serif text-2xl">
+    <a href="/"><span class="menu-item">Home</span></a>
+    <a href="/about"><span class="menu-item">About</span></a>
+    <a href="/careers"><span class="menu-item">Careers</span></a>
+    <span class="btn black request-demo">Request a Demo</span>
+  </div>        
+</div>
+<div id="demo-modal-container">
+  <div id="demo-modal">
+    <svg id="close-modal" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="hideRequestDemo()">
+      <path d="M1 1L23 23" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10"/>
+      <path d="M23 1L1 23" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10"/>
+    </svg>
+    <form>
+      <p class="pb-4 text-2xl font-bold text-center">Learn how Origin can help you build a winning portfolio.</p>
+      <p class="pb-4 text-center">Sign up for a demo with one of our product experts.</p>
+      <input type="email" class="email" placeholder="Enter email address..." />
+      <input type="submit" class="submit btn black"></input>
+    </form>
+  </div>        
+</div>
+</footer>
+
+<!-- TEMPLATE: All Pages -->
+<script src="/assets/js/vendor/modernizr-3.8.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+<script src="/assets/js/plugins.js"></script>
+<script src="/assets/js/main.js"></script>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7023928.js"></script>
+<!-- End of HubSpot Embed Code --></div>
+
 </body>
+
 </html>

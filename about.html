@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+  
+  <title></title>
+</head><body>
+
+<div id="page-container">
+<div id="page" class="page-about text-base"><div id="page-top-bar"></div>
+<div id="page-header">
+  <a href="/">
+  <img id="logo" width="100px" src="/assets/img/altrio_logo_navy.png" alt="logo" />
+  <img id="alt-logo" class="hidden" width="100px" src="/assets/img/altrio_logo_white.png" alt="logo" />
+</a><div id="menu">
+  <a href="/about"><span class="font-serif menu-item text-navy active">About</span></a>
+  <a href="/careers"><span class="font-serif menu-item text-navy ">Careers</span></a>
+  <span id="menu-request-demo" class="btn blue request-demo">Request a Demo</span>
+  <img id="open-menu" src="/assets/img/menu.svg" alt="open menu" onclick="toggleMenu(true)" />
+  <svg id="close-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="toggleMenu(false)">
+    <path d="M1 1L23 23" stroke="#0D2443" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M23 1L1 23" stroke="#0D2443" stroke-width="2" stroke-miterlimit="10"/>
+  </svg>
+</div>
+</div><div id="hero-text">
+  <div class="text-4xl font-bold leading-snug">
+    <p>We build technology to solve the biggest challenges in real estate.</p>
+  </div>
+  <div class="font-serif text-xl leading-relaxed">
+    <p>At Altrio, our mission is to help real estate investors and managers achieve their goals and enjoy their work by creating software and services that make their jobs easier.</p>
+  </div>
+</div>
+
+<img id="home-hero" src="/assets/img/about.jpg" alt="people sitting at table" />
+
+<div id="altrio-description" class="font-serif">
+  <div id="altrio-description-col-1">
+    <p class="text-navy font-bold text-2xl">Altrio was founded by real estate veterans guided by the belief that technology can improve our industry in meaningful ways.</p>   
+  </div>
+  <div id="altrio-description-col-2">
+    <p>We strive to go beyond merely streamlining monotonous tasks and keeping track of information.</p>
+    <p>That was PropTech 1.0.  PropTech 2.0 will fundamentally change the structure of the real estate capital markets, making it easier for investors and managers to find eachother and do great deals.</p>
+    <p>We believe that technology will help investors construct and manage portfolios that perform better and will allow managers to efficiently access the right capital for their projects, without being limited by their personal networks.</p>
+  </div>
+</div>
+
+<div id="values">
+  <span id="values-title" class="text-4xl font-bold">Our Values</span>
+  <div id="value-items">
+    <p class="value-1 value-title text-blue text-xl font-bold">We are focused on results</p>
+    <p class="value-1 value-sub-title font-serif">Strategy matters. Process matters. Effort matters. But results matter most. Altrio is focused on helping our customers succeed by building products that contribute meaningfully to their professional and personal success.</p>
+    <p class="value-2 value-title  text-blue text-xl font-bold">We let the facts decide</p>
+    <p class="value-2 value-sub-title font-serif">At Altrio, important decisions are made based on an honest and impartial assessment of the facts, backed up by data wherever possible. We encourage debate, but favour data over persuasive arguments.</p>
+    <p class="value-3 value-title  text-blue text-xl font-bold">We take the long view</p>
+    <p class="value-3 value-sub-title font-serif">Solving big problems takes time and persistence. We are building Altrio to last, with an emphasis on sustained organizational health and a clear long-term strategy.</p>
+  </div>
+</div><div id="we-are-hiring">
+  <img id="we-are-hiring-image" src="/assets/img/man-with-laptop.jpg" alt="man with laptop" />
+  <div id="we-are-hiring-text">
+    <p class="pb-5">We're hiring. Join our team and help us build the future of real estate investing.</p>
+    <a href="/careers#positions"><span id="view-open-positions" class="btn blue">View Open Positions</span></a>
+  </div>
+</div><div id="get-started">
+  <div id="get-started-text">
+    <p>Get started today.</p>
+    <p>Let us show you the many powerful features Origin has to offer.</p>
+  </div>
+  <span class="btn black request-demo">Request a Demo</span>
+</div>
+
+</div><!-- TEMPLATE: All Pages -->
+<footer>
+<div id="footer">
+  <img id="footer-logo" width="100px" src="/assets/img/altrio_logo_white.png" alt="logo" />
+  <span id="copyright" class="text-end text-white text-xs">&copy; 2020 Altrio Inc.</span>
+</div>
+<div id="full-screen-menu">
+  <div id="full-screen-menu-items" class="font-serif text-2xl">
+    <a href="/"><span class="menu-item">Home</span></a>
+    <a href="/about"><span class="menu-item">About</span></a>
+    <a href="/careers"><span class="menu-item">Careers</span></a>
+    <span class="btn black request-demo">Request a Demo</span>
+  </div>        
+</div>
+<div id="demo-modal-container">
+  <div id="demo-modal">
+    <svg id="close-modal" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="hideRequestDemo()">
+      <path d="M1 1L23 23" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10"/>
+      <path d="M23 1L1 23" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10"/>
+    </svg>
+    <form>
+      <p class="pb-4 text-2xl font-bold text-center">Learn how Origin can help you build a winning portfolio.</p>
+      <p class="pb-4 text-center">Sign up for a demo with one of our product experts.</p>
+      <input type="email" class="email" placeholder="Enter email address..." />
+      <input type="submit" class="submit btn black"></input>
+    </form>
+  </div>        
+</div>
+</footer>
+
+<!-- TEMPLATE: All Pages -->
+<script src="/assets/js/vendor/modernizr-3.8.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+<script src="/assets/js/plugins.js"></script>
+<script src="/assets/js/main.js"></script>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7023928.js"></script>
+<!-- End of HubSpot Embed Code --></div>
+
+</body>
+
+</html>
